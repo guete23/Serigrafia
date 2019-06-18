@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E152785E-1911-498C-AEE8-275C978A4082}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Serigrafia.My.MyApplication</StartupObject>
+    <RootNamespace>Serigrafia</RootNamespace>
+    <AssemblyName>Serigrafia</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\PROGRAMACION\Programas\programas\vb2010\Serigrafia\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\PROGRAMACION\Programas\programas\vb2010\Serigrafia\</UpdateUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>26</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Serigrafia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Serigrafia.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>67DC1D263DA7DBEA358B8C0302275966EA7E13C0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Serigrafia_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logose.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.4, Version=4.1.20112.202, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Report.4, Version=4.0.20162.188, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.4, Version=4.0.20162.188, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.6.20141.831, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Report.4, Version=4.0.20162.188, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1SuperTooltip.4, Version=4.0.20112.90, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abre_DB.vb" />
+    <Compile Include="Busca_mat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta_cortes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despacho.designer.vb">
+      <DependentUpon>Despacho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Despacho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despacho_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despacho_mant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empresa.vb" />
+    <Compile Include="Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresos_otros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos_compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario_Mat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctos_i.designer.vb">
+      <DependentUpon>Doctos_i.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Doctos_i.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materiales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pedidos.Designer.vb">
+      <DependentUpon>Pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedido_mant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedor_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos.designer.vb">
+      <DependentUpon>Proyectos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos_c.Designer.vb">
+      <DependentUpon>Proyectos_c.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos_c1_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos_c9.designer.vb">
+      <DependentUpon>Proyectos_c9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyectos_c9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proy_mant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recepcion.designer.vb">
+      <DependentUpon>Recepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recepcion_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recep_mant.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salidas_p.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tablas_c.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Busca_mat.resx">
+      <DependentUpon>Busca_mat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes_c.resx">
+      <DependentUpon>Clientes_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta_cortes.resx">
+      <DependentUpon>Consulta_cortes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Despacho.resx">
+      <DependentUpon>Despacho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Despacho_c.resx">
+      <DependentUpon>Despacho_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Despacho_mant.resx">
+      <DependentUpon>Despacho_mant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario_c.resx">
+      <DependentUpon>Inventario_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Pedidos_c.resx">
+      <DependentUpon>Pedidos_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresos_otros.resx">
+      <DependentUpon>ingresos_otros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos_compra.resx">
+      <DependentUpon>Ingresos_compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario_Mat.resx">
+      <DependentUpon>Inventario_Mat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctos_i.resx">
+      <DependentUpon>Doctos_i.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materiales.resx">
+      <DependentUpon>Materiales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos.resx">
+      <DependentUpon>Pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido_mant.resx">
+      <DependentUpon>Pedido_mant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor.resx">
+      <DependentUpon>Proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor_c.resx">
+      <DependentUpon>Proveedor_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos.resx">
+      <DependentUpon>Proyectos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos_c.resx">
+      <DependentUpon>Proyectos_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos_c1_c.resx">
+      <DependentUpon>Proyectos_c1_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyectos_c9.resx">
+      <DependentUpon>Proyectos_c9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proy_mant.resx">
+      <DependentUpon>Proy_mant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recepcion.resx">
+      <DependentUpon>Recepcion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recepcion_c.resx">
+      <DependentUpon>Recepcion_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recep_mant.resx">
+      <DependentUpon>Recep_mant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salidas.resx">
+      <DependentUpon>Salidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Salidas_p.resx">
+      <DependentUpon>Salidas_p.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas.resx">
+      <DependentUpon>Tablas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tablas_c.resx">
+      <DependentUpon>Tablas_c.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion.resx">
+      <DependentUpon>Facturacion.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Serigrafia_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logose.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
